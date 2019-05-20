@@ -1,0 +1,103 @@
+/*Joseph Daniel 11/12/2018*/
+
+*{box-sizing: border-box;}
+
+header, main, nav, footer, figure, figcaption, aside, section, article {display: block;}
+
+body{background-color: #B8D8ED; color: #666666;
+	 font-family: Arial, Helvetica, sans-serif;}
+	 
+header{background-color: #000033; color: #FFFFFF;
+		height: 120px; padding-top: 30px; padding-left: 3em; text-align: center;}
+		
+main{padding-top: 1px; padding-right: 20px; padding-bottom: 20px; padding-left: 30px;
+	 display: block; background-color: #FFFFFF; margin-left: 190px;}
+	 
+nav {font-weight: bold; padding: 1.5em; font-size: 120%; width: 160px; float: left;}
+
+nav a{text-decoration: none;}
+
+nav ul{margin: 0px; padding-left: 0px; font-size: 1.2em; list-style-type: none;}
+
+nav:link{color: #5C7FA3;}
+nav:visited{color: #344873;}
+nav:hover{color: #A52A2A;}
+
+h1{font-family: Georgia, "Times New Roman", serif; font-size: 3em; letter-spacing: 0.25em;
+   margin-top: 0px;}
+   
+h2 {color: #3399CC; font-family: Georgia, "Times New Roman", serif; text-shadow: 1px 1px #CCC;}
+
+h3{font-family: Georgia, "Times New Roman", serif; color: #000033;}
+
+main ul{list-style-image: url(marker.gif);}
+
+dt {color: #000033;}
+
+footer{font-size: 75%; font-style: italic; font-family: Georgia, "Times New Roman", serif; padding: 20px; text-align: center; margin-left: 190px; background-color: #FFFFFF;}
+
+/*table form*/
+table{border: 2px solid #3399CC; border-collapse: collapse;}
+td, th{padding: 0.5em; border: 2px solid #3399CC;}
+td{text-align: center;}
+tr:nth-of-type(odd){background-color: #F5FAFC;}
+
+.resort {color:#5C7FA3; font-weight: bold;}
+.contact {font-size: 90%;}
+.text{text-align: left;}
+#mobile {display: none;}
+#desktop {display: inline;}
+
+#wrapper{margin-left: auto; margin-right: auto;
+		 width: 80%; min-width: 960px; max-width: 2048px;
+		 background-color: #90C7E3; box-shadow: 3px 3px 3px #333333; border: 1px solid #000033; 
+		 background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3); background-repeat: no-repeat;}
+		 
+#homehero{height: 300px; margin-left: 190px;
+		  background-image: url(coast2.jpg);
+		  background-size: 100% 100%;
+		  background-repeat: no-repeat;}
+		  
+#yurthero{height: 300px; margin-left: 190px;
+		  background-image: url(yurt.jpg);
+		  background-size: 100% 100%;
+		  background-repeat: no-repeat;}
+		  
+#trailhero{height: 300px; margin-left: 190px;
+		  background-image: url(trail.jpg);
+		  background-size: 100% 100%;
+		  background-repeat: no-repeat;}
+		  
+/*tablet*/
+@media only screen and (max-width: 64em){
+	body{margin: 0px;}
+	#wrapper{min-width: 0; width: auto; box-shadow: none; border: none;}
+	header{padding-top: 0.5em; padding-bottom: 0.5em; padding-left: 0; height: auto;}
+	h1{letter-spacing: 0.1em;}
+	main{margin-left: 0px;}
+	nav{float: none; width: auto; text-align: center; padding: 0.5em;}
+	nav ul{display: inline; padding-bottom: 0.25em; padding-top: 0.25em; padding-left: 0.75em; padding-right: 0.75em;}
+	#homehero{margin-left: 0; height: 200px;}
+	#yurthero{margin-left: 0; height: 200px;}
+	#trailhero{margin-left: 0; height: 200px;}
+	footer{margin-left: 0;}
+}
+
+/*smartphone*/
+@media only screen and (max-width: 37.5em){
+	main{padding-bottom: 0.1em; padding-top: 0.1em; padding-left: 1em; padding-right: 1em; font-size: 90%;}
+	h1{font-size: 2em;}
+	nav{padding: 0;}
+	nav li{display: block; margin: 0px; border-bottom: 2px solid #330000;}
+	nav:link, nav:hover, nav:visited {display: block;}
+	#homehero, #yurthero, #trailhero{background-image: none; height: 0;}
+	#mobile{display: inline;}
+	#desktop {display: none;}
+	label{float:none; text-align: left;}
+	input[type"submit"]{margin-left: 0;}
+}
+/*Configure the form for the reservations page*/
+label{float: left; display: block; text-align: right; width: 120px; padding-right: 10px;}
+input{display: block; margin-bottom: 20px;}
+textarea{display: block; margin-bottom: 20px;}
+input[type="submit"]{margin-left: 130px;}
